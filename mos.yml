@@ -1,9 +1,13 @@
 author: mongoose-os
-name: arduino-adafruit-gfx
 description: Arduino Adafruit GFX library
 type: lib
-# arch: PLATFORM
 version: 1.0
-skeleton_version: 2017-05-18
+
 sources:
   - src
+
+tags:
+  - arduino
+  - c
+
+skeleton_version: 2017-05-18
