@@ -9,5 +9,6 @@ sources:
 tags:
   - arduino
   - c
+  - hw
 
 skeleton_version: 2017-05-18
