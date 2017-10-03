@@ -13,4 +13,7 @@ tags:
   - c
   - hw
 
+libs:
+  - origin: https://github.com/mongoose-os-libs/arduino-compat
+
 manifest_version: 2017-09-29
