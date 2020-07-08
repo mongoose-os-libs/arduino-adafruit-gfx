@@ -706,6 +706,8 @@ void Adafruit_GFX::drawRGBBitmap(int16_t x, int16_t y,
 
 // TEXT- AND CHARACTER-HANDLING FUNCTIONS ----------------------------------
 
+extern const unsigned char ASCII5x7font[];
+
 // Draw a character
 void Adafruit_GFX::drawChar(int16_t x, int16_t y, unsigned char c,
   uint16_t color, uint16_t bg, uint8_t size) {
@@ -722,7 +724,7 @@ void Adafruit_GFX::drawChar(int16_t x, int16_t y, unsigned char c,
 
         startWrite();
         for(int8_t i=0; i<5; i++ ) { // Char bitmap = 5 columns
-            uint8_t line = pgm_read_byte(&font[c * 5 + i]);
+            uint8_t line = pgm_read_byte(&ASCII5x7font[c * 5 + i]);
             for(int8_t j=0; j<8; j++, line >>= 1) {
                 if(line & 1) {
                     if(size == 1)
